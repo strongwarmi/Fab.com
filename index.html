@@ -6,57 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
+    <a data-open="canvasMyBag">Añadir a carrito</a>
 
-    <section class="myBag">
-      <div class="checkout-summary">
-        <div class="checkout-summary-title">
-          <h5>Your Order</h5>
-          <h5>2 Items</h5>
+    <div class="off-canvas position-right off-canvas-wrapper" id="canvasMyBag" data-off-canvas data-transition="overlap">
+      <div class="off-canvas-content" data-off-canvas-content>
+        <div class="checkout-summary">
+          <header class="myBagHeader">
+            <i class="icon-chevron-right2 close-icon small-1" aria-hidden="true" data-close></i>
+            <h5 class="small-3 small-offset-4">My Bag</h5>
+          </header>
+          <div class="free-shipping">
+            <span class="icon-truck"></span><span class="text-weight">Your Fab products are eligible for <span>FREE SHIPPING</span>*</span>
+          </div>
+          <div class="checkout-summary-item">
+            <img src="assets/img/2501-300x300-1372284660-primary.png" class="myBag-producto-img float-left">
+            <div class="item-name float-left">
+              <span>Double Cube Plus Cedar</span>
+            </div>
+            <div class="item-price float-left">
+              <div class="select">
+                <select class="count" name="">
+                  <option value="" class="select-text" selected>1</option>
+                  <option value="" class="select-text">2</option>
+                  <option value="" class="select-text">3</option>
+                  <option value="" class="select-text">4</option>
+                  <option value="" class="select-text">5</option>
+                  <option value="" class="select-text">6</option>
+                  <option value="" class="select-text">7</option>
+                  <option value="" class="select-text">8</option>
+                  <option value="" class="select-text">9</option>
+                  <option value="" class="select-text">10</option>
+                  <option value="" class="select-text">11</option>
+                  <option value="" class="select-text">12</option>
+                  <option value="" class="select-text">13</option>
+                  <option value="" class="select-text">14</option>
+                  <option value="" class="select-text">15</option>
+                  <option value="" class="select-text">16</option>
+                  <option value="" class="select-text">17</option>
+                  <option value="" class="select-text">18</option>
+                  <option value="" class="select-text">19</option>
+                  <option value="" class="select-text">20</option>
+                  <option value="" class="select-text">21</option>
+                </select>
+              </div>
+              <strong class="float-right">$39</strong>
+            </div>
+          </div>
+          <div class="checkout-summary-details">
+            <div class="left">
+              <p><strong>Subtotal:</strong></p>
+              <p><strong>Tax:</strong></p>
+              <p><strong>Total:</strong></p>
+            </div>
+            <div class="right">
+              <p>$10.99</p>
+              <p>$2.00</p>
+              <p>$12.99</p>
+            </div>
+          </div>
+          <button class="button expanded">Proceed to Checkout</button>
         </div>
-        <div class="checkout-summary-item">
-          <img src="https://placeimg.com/100/80/any">
-          <div class="item-name">
-            <a>Comfy Knit Blazer</a>
-            <p><span class="title">Color: </span>Blue</p>
-            <p><span class="title">Size: </span>M</p>
-          </div>
-          <div class="item-price">
-            <p class="title">$24.99</p>
-            <a href="#">Remove</a>
-          </div>
-        </div>
-        <div class="checkout-summary-item">
-          <img src="https://placeimg.com/100/80/any">
-          <div class="item-name">
-            <a>Comfy Knit Blazer</a>
-            <p><span class="title">Color: </span>Blue</p>
-            <p><span class="title">Size: </span>M</p>
-          </div>
-          <div class="item-price">
-            <p class="title">$24.99</p>
-            <a href="#">Remove</a>
-          </div>
-        </div>
-        <div class="checkout-summary-details">
-          <div class="left">
-            <p><strong>Subtotal:</strong></p>
-            <p><strong>Tax:</strong></p>
-            <p><strong>Total:</strong></p>
-          </div>
-          <div class="right">
-            <p>$10.99</p>
-            <p>$2.00</p>
-            <p>$12.99</p>
-          </div>
-        </div>
-        <button class="button expanded">Proceed to Checkout</button>
       </div>
+    </div>
 
 
-    </section>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>

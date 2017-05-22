@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?vkcfk9');
+  src:  url('../fonts/icomoon.eot?vkcfk9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vkcfk9') format('truetype'),
+    url('../fonts/icomoon.woff?vkcfk9') format('woff'),
+    url('../fonts/icomoon.svg?vkcfk9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-right:before {
+  content: "\e900";
+}
+.icon-check-square-o:before {
+  content: "\f046";
+}
+.icon-angle-double-up:before {
+  content: "\f102";
+}
+.icon-angle-double-down:before {
+  content: "\f103";
+}
+.icon-chevron-right2:before {
+  content: "\e901";
+}
+.icon-chevron-right3:before {
+  content: "\f078";
+}
+.icon-trashcan:before {
+  content: "\f0d0";
+}
+.icon-truck:before {
+  content: "\eb0e";
+}
+.icon-truck2:before {
+  content: "\e92d";
+}
