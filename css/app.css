@@ -5,6 +5,12 @@ header{
   position: fixed;
   width: 100%;
 }
+a{
+  color: #393939;
+}
+a:hover{
+  color: #adadad;
+}
 .top-bar{
   padding: 1rem 0;
 }
@@ -78,7 +84,7 @@ header{
 }
 @media (max-width: 640px){
   .logo{
-    width: 15%;
+    width: 25%;
   }
 }
 @media (max-width: 640px){
@@ -113,4 +119,22 @@ cursor: pointer;
   position:fixed;
   bottom: 3%;
   left: 1.5%;
+}
+.border-bottom{
+  border-bottom: 1px solid #ddd;
+}
+.border-top{
+  border-top: 1px solid #ddd;
+}
+#menu-footer,
+#departments,
+#questions{
+  padding: 1.7rem 0;
+}
+#input-register{
+  padding: 10px;
+  width: 100%;
+}
+#btn-continue{
+  background-color: #000;
 }
