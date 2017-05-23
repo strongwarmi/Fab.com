@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700i,800" rel="stylesheet">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/product.css">
   </head>
@@ -49,7 +50,7 @@
       </div>
     </header>
     <section  class="details">
-      <div class="container">
+    <div class="container">
         <div class="row columns hide-for-small-only bg-gray">
           <div class="medium-12 columns">
           <nav arial-label="" role="navigation">
@@ -79,7 +80,7 @@
       <div class="row">
         <section>
         <div class="large-1 medium-1 columns">
-            <ul class="hide-for-small-only tabs mt-80 flex-container-desktop" data-tabs>
+            <ul class="hide-for-small-only tabs mt-80" data-tabs>
               <li class="tabs-title is-active"><a href="#panel1" aria-selected="true"><img src="img-product/cajon-dos-pisos.png"></a></li>
             </ul>
         </div>
@@ -105,7 +106,7 @@
             <option value="four">4</option>
           </select>
           <p class="text-warning">FREE SHIPING <span class="text-gray">above $75 *</span> <span class="fi-info black"></span></p>
-          <button  class="add-button" type="button" name="Add"> <span class="fi-shopping-bag"></span> Add to Bag</button>
+          <button  class="add-button" type="button" name="Add" data-open="canvasMyBag"> <span class="fi-shopping-bag"></span>Añadir a carrito</button>
           <span class="fi-heart "><span class="size-14">43</span></span>
          <div class="social"><span class="fi-social-facebook"></span><span class="fi-social-twitter"></span>
            <span class="fi-social-tumblr"></span> <span class="fi-social-pinterest"></span></div>
@@ -272,11 +273,109 @@
  </div>
 </div>
   </section>
-</body>
-</html>
+  <section class="modal">
+    <div class="off-canvas position-right off-canvas-wrapper" id="canvasMyBag" data-off-canvas data-transition="overlap">
+       <div class="off-canvas-content" data-off-canvas-content>
+         <div class="checkout-summary">
+           <header class="myBagHeader">
+             <i class="icon-chevron-right2 close-icon small-1" aria-hidden="true" data-close></i>
+             <h5 class="small-3 small-offset-4">My Bag</h5>
+           </header>
+           <div class="free-shipping ocultar">
+             <span class="icon-truck"></span><span class="text-weight">Your Fab products are eligible for <span>FREE SHIPPING</span>*</span>
+           </div>
+           <div class="checkout-summary-item ocultar">
+             <img src="img-product/cajon-dos-pisos.png" class="myBag-producto-img float-left">
+             <div class="item-name float-left">
+               <span>Double Cube Plus Cedar</span>
+             </div>
+             <div class="item-price float-left">
+               <div class="select">
+                 <select class="count" name="">
+                   <option value="" class="select-text" selected>1</option>
+                   <option value="" class="select-text">2</option>
+                   <option value="" class="select-text">3</option>
+                   <option value="" class="select-text">4</option>
+                   <option value="" class="select-text">5</option>
+                   <option value="" class="select-text">6</option>
+                   <option value="" class="select-text">7</option>
+                   <option value="" class="select-text">8</option>
+                   <option value="" class="select-text">9</option>
+                   <option value="" class="select-text">10</option>
+                   <option value="" class="select-text">11</option>
+                   <option value="" class="select-text">12</option>
+                   <option value="" class="select-text">13</option>
+                   <option value="" class="select-text">14</option>
+                   <option value="" class="select-text">15</option>
+                   <option value="" class="select-text">16</option>
+                   <option value="" class="select-text">17</option>
+                   <option value="" class="select-text">18</option>
+                   <option value="" class="select-text">19</option>
+                   <option value="" class="select-text">20</option>
+                   <option value="" class="select-text">21</option>
+                 </select>
+               </div>
+               <strong class="float-right">$39</strong>
+             </div>
+             <span class="float-left arrival">Estimated Arrival: <span class="text-green">Jun. 20 - Jul. 4</span></span>
+             <span class="icon-trashcan"></span>
+           </div>
+           <footer class="ocultar">
+             <ul class="vertical menu no-bullet footer-menu" data-accordion-menu>
+               <li class="title">
+                 <a href="#">Order Summary</a>
+                 <span class="icon-angle-double-up doble-arrow doble-arrow-up"></span>
+                 <span class="icon-angle-double-down doble-arrow doble-arrow-down"></span>
+                 <ul class="menu vertical nested active">
+                   <li class="li-border">
+                     <div class="detail-price">
+                       <span class="float-left">Subtotal</span>
+                       <span class="float-right">$39</span>
+                     </div>
+                   </li>
+                   <li class="li-border">
+                     <div class="detail-price">
+                       <span class="float-left">Estimated Shipping Fee</span>
+                       <span class="float-right text-green">FREE</span>
+                     </div>
+                   </li>
+                 </ul>
+               </li>
+               <li>
+                 <div class="detail-total">
+                   <span class="float-left">Total</span>
+                   <span class="float-right">$39</span>
+                 </div>
+               </li>
+               <li>
+                 <button class="button expanded checkout" id ="checkout">Checkout <span class="icon-chevron-right2"></span></button>
+               </li>
+             </ul>
+           </footer>
+           <div class="payment" id="payment">
+             <span class="cerrar" id="cerrar">&times</span>
+             <span class="payment-title">Select your payment method:
+             </span>
+             <p class="promo-text">Promo codes can be applied on the next screen.</p>
+             <div class="donation">
+               <span class="icon-check-square-o check"></span>
+               <span class="donation-text">  I would like to donate $1 to support
+                 <span class="donation-link">"International Rescue Committee"</span>.</span>
+             </div>
+             <div class="card">
+               Credit Card
+             </div>
+             <div class="paypal">
+               <img src="assets/img/new_paypal_logo.png" alt="">
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+  </section>
 <script src="js/vendor/jquery.js" type="text/javascript"></script>
 <script src="js/vendor/foundation.js" type="text/javascript"></script>
 <script src="js/vendor/what-input.js" type="text/javascript"></script>
 <script src="js/app.js" type="text/javascript"></script>
-  </body>
+</body>
 </html>
