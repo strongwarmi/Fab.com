@@ -1,3 +1,27 @@
 *{
   font-family: 'Lato', sans-serif;
 }
+.display-inline{
+  display: inline-block;
+}
+.shop-big{
+  width: 49%;
+
+/*  margin: 0 5px 10px 5px;
+  padding: 0 10px;*/
+}
+.shop-small{
+  width: 24.4%;
+  transition: 0.2s linear;
+/*  padding: 0 5px */
+}
+@media (max-width: 600px){
+  .shop-big{
+    width: 100%;
+  }
+}
+@media (max-width: 600px){
+  .shop-small{
+    width: 49.5%;
+  }
+}
