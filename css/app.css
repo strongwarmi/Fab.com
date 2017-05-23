@@ -173,6 +173,9 @@ footer:focus{
 .checkout-summary-item:hover .icon-trashcan{
   display: inline-block;
 }
+.checkout-summary-item:hover{
+  background-color: #F7F7F7;
+}
 @media screen and (min-width:600px){
 
   .off-canvas.is-open {
