@@ -59,20 +59,26 @@
   overflow: hidden;
 }
 .myBag-producto-img{
-  width: 84px;
-  height: 84px;
+  width: 60px;
+  height: 60px;
   border: 1px solid #f2f2f2;
 }
 
 .checkout-summary-item .item-name,
 .checkout-summary-item .item-price {
   padding: 0 1rem;
-  font-size: 13px;
-  width: 70%;
+  font-size: 14px;
+  width: 75%;
   display: inline-block;
+}
+.checkout-summary-item{
+  position: relative;
 }
 .item-price{
   margin-top: 8px;
+}
+.item-price strong{
+  font-size: 16px;
 }
 .select{
   width: 60px;
@@ -85,6 +91,7 @@
   color: #171717;
   border: 1px solid #171717;
   font-size: 0.8rem;
+  margin: 0 0 0.5rem;
 }
 .select-text{
   color: #666;
@@ -93,25 +100,86 @@
 option{
   min-height: 1.1rem;
 }
-
-.checkout-summary-details {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 1rem;
-  border: 1px solid #e6e6e6;
-  border-top: none;
+.arrival{
+  color: #666;
+  width: 70%;
+  display: inline-block;
+  font-size: 10px;
 }
-
-
-
+.text-green{
+  color: #179b7f;
+}
+.icon-trashcan{
+  position: absolute;
+  top: 9px;
+  right: 15px;
+  font-size: 12px;
+}
+.checkout-summary footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer a{
+  text-decoration: none;
+  color: black!important;
+}
+.is-accordion-submenu-parent > a::after{
+  border: none!important;
+}
+.footer-menu{
+  background-color: #F5F5F5;
+  font-size: 12px;
+  border-top: 1px solid #e1e1e1;
+}
+footer:focus{
+  outline: none;
+}
+.footer-title{
+  position: relative;
+}
+.doble-arrow{
+  position: absolute;
+  top: 5px;
+  display: inline-block;
+  right: 5px;
+  font-size: 16px;
+}
+.detail-price{
+  width: 100%;
+  padding: 15px 10px 15px 0;
+}
+.detail-total{
+  width: 100%;
+  padding: 10px 10px 0 18px;
+  margin-bottom: 8%;
+}
+.li-border{
+  border-bottom: 1px solid #e1e1e1;
+  width: 100%;
+  min-height: 45px;
+}
+.checkout{
+  background-color: #171717;
+  font-size: 1rem;
+}
+.checkout:hover{
+  background-color: #4A4A4A;
+}
+.icon-trashcan:hover{
+  color: red;
+}
 @media screen and (min-width:600px){
 
   .off-canvas.is-open {
     width: 373px;
+  }
+  .myBag-producto-img{
+    width: 84px;
+    height: 84px;
+  }
+  .arrival{
+    padding: 0 1rem;
   }
 
 }
