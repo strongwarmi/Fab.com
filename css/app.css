@@ -125,8 +125,14 @@ footer a{
   text-decoration: none;
   color: black!important;
 }
-.is-accordion-submenu-parent > a::after{
+.off-canvas .is-accordion-submenu-parent > a::after{
   border: none!important;
+}
+.off-canvas .is-accordion-submenu-parent[aria-expanded='true'] .doble-arrow-down{
+  display: inline-block;
+}
+.off-canvas .is-accordion-submenu-parent[aria-expanded='true'] .doble-arrow-up{
+  display: none;
 }
 .footer-menu{
   background-color: #F5F5F5;
@@ -142,9 +148,11 @@ footer:focus{
 .doble-arrow{
   position: absolute;
   top: 5px;
-  display: inline-block;
   right: 5px;
   font-size: 16px;
+}
+.doble-arrow-down{
+  display: none;
 }
 .detail-price{
   width: 100%;
@@ -161,11 +169,11 @@ footer:focus{
   min-height: 45px;
 }
 .checkout{
-  background-color: #171717;
+  background-color: #171717!important;
   font-size: 1rem;
 }
 .checkout:hover{
-  background-color: #4A4A4A;
+  background-color: #4A4A4A!important;
 }
 .icon-trashcan:hover{
   color: red;
@@ -176,6 +184,70 @@ footer:focus{
 .checkout-summary-item:hover{
   background-color: #F7F7F7;
 }
+.payment{
+  display: none;
+}
+.cerrar{
+  font-size: 1.6rem;
+  font-weight: bold;
+  float: right;
+  padding: 0 10px;
+  cursor: pointer;
+}
+.payment-title{
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin: 5px auto;
+  color: #000;
+  font-size: 1.6rem;
+}
+.promo-text{
+  font-size: .7rem;
+  color: #666;
+  text-align: center;
+}
+.donation{
+  margin: 20px auto 25px auto;
+  width: 90%;
+  background-color: #ececec;
+  padding: 10px;
+  border-radius: 10px;
+  color: #333;
+  font-size: 13px;
+}
+.check{
+  font-size: 23px;
+  position: relative;
+  top: 4px;
+}
+.donation-text{
+  letter-spacing: 0.5px;
+  padding: 0 5px;
+}
+.donation-link{
+  text-decoration: underline;
+}
+.donation-link:hover,
+.card:hover{
+  color: #9b9b9b;
+}
+.card, .paypal{
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid #d5d5d5;
+  border-radius: 3px;
+  padding: 8px 0;
+  cursor: pointer;
+  color: #333;
+}
+.paypal img{
+  width: 90px;
+  height: 30px;
+}
+
 @media screen and (min-width:600px){
 
   .off-canvas.is-open {

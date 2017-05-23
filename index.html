@@ -19,10 +19,10 @@
             <i class="icon-chevron-right2 close-icon small-1" aria-hidden="true" data-close></i>
             <h5 class="small-3 small-offset-4">My Bag</h5>
           </header>
-          <div class="free-shipping">
+          <div class="free-shipping ocultar">
             <span class="icon-truck"></span><span class="text-weight">Your Fab products are eligible for <span>FREE SHIPPING</span>*</span>
           </div>
-          <div class="checkout-summary-item">
+          <div class="checkout-summary-item ocultar">
             <img src="assets/img/2501-300x300-1372284660-primary.png" class="myBag-producto-img float-left">
             <div class="item-name float-left">
               <span>Double Cube Plus Cedar</span>
@@ -58,11 +58,12 @@
             <span class="float-left arrival">Estimated Arrival: <span class="text-green">Jun. 20 - Jul. 4</span></span>
             <span class="icon-trashcan"></span>
           </div>
-          <footer>
+          <footer class="ocultar">
             <ul class="vertical menu no-bullet footer-menu" data-accordion-menu>
               <li class="title">
                 <a href="#">Order Summary</a>
-                <span class="icon-angle-double-down doble-arrow"></span>
+                <span class="icon-angle-double-up doble-arrow doble-arrow-up"></span>
+                <span class="icon-angle-double-down doble-arrow doble-arrow-down"></span>
                 <ul class="menu vertical nested active">
                   <li class="li-border">
                     <div class="detail-price">
@@ -85,10 +86,27 @@
                 </div>
               </li>
               <li>
-                <button class="button expanded checkout">Checkout <span class="icon-chevron-right2"></span></button>
+                <button class="button expanded checkout" id ="checkout">Checkout <span class="icon-chevron-right2"></span></button>
               </li>
             </ul>
           </footer>
+          <div class="payment" id="payment">
+            <span class="cerrar" id="cerrar">&times</span>
+            <span class="payment-title">Select your payment method:
+            </span>
+            <p class="promo-text">Promo codes can be applied on the next screen.</p>
+            <div class="donation">
+              <span class="icon-check-square-o check"></span>
+              <span class="donation-text">  I would like to donate $1 to support
+                <span class="donation-link">"International Rescue Committee"</span>.</span>
+            </div>
+            <div class="card">
+              Credit Card
+            </div>
+            <div class="paypal">
+              <img src="assets/img/new_paypal_logo.png" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </div>
