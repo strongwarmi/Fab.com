@@ -1,0 +1,148 @@
+*{
+  font-family: 'Nunito', sans-serif;
+}
+h3{
+  font-size: 40px;
+}
+/*reusables*/
+.mt-80{
+  margin-top: 80%;
+}
+.mt-5{
+  margin-top: 5%;
+}
+.text-gray{
+color:#666666;
+font-size: 20px;
+}
+.text-warning{
+  color: #d0021b;
+}
+.black{
+  color: #000;
+}
+.size-14{
+  font-size: 14px;
+}
+.size-16{
+  font-size: 16px;
+  font-weight: 300;
+}
+.size-35{
+  font-size: 35px;
+}
+/*header-black*/
+.bg-black{
+  background-color: #000;
+  width:100%;
+  position: fixed;
+}
+@media screen and (min-width:768px){
+  .bg-black{
+    height: 3rem;
+  }
+}
+.bg-black div{
+  color: #fff;
+  padding: 0.5% 2%;
+}
+.bg-black img{
+  width: 25px;
+  height: 25px;
+}
+.float-rg{
+  float: right;
+}
+.usa-text{
+  font-size: 0.8rem;
+  margin-right: 2%;
+  color: #fff;
+}
+.right{
+  font-size: 27px;
+  margin-left: 5px;
+  margin-top: -2%;
+}
+.ml-4{
+  margin-left: 4px;
+}
+@media screen and (min-width:768px){
+  .usa-text{
+    margin-right: 4%;
+    font-size: 1rem;
+  }
+  .right{
+    font-size: 30px;
+    margin-top: -1%;
+  }
+}
+/*Links-site*/
+.bg-gray{
+  background-color: #f5f5f5;
+}
+
+.tabs-title>a[aria-selected='true']{
+  background-color: #fff;;
+}
+.thumbnail{
+  margin-left: 5%;
+}
+.select-number{
+  width: 20%;
+}
+.breadcrumbs a {
+  color: #000;
+  text-transform:capitalize;
+}
+.breadcrumbs a:hover {
+  text-decoration: none;
+}
+/*details*/
+.details{
+  padding-top: 11.5%;
+  z-index: -1;
+}
+.underline{
+  text-decoration: underline;
+
+}
+.price{
+  font-size: 30px;
+  font-weight: 300;
+}
+.fi-info:hover{
+  color:#d0021b;
+}
+.tabs-title > a {
+  padding: 1%;
+}
+.add-button{
+  background-color: #d0021b;
+  width: 50%;
+  height: 40px;
+  color: #fff;
+}
+.fi-heart{
+  font-size: 30px;
+  color: #d0021b;
+  margin-left: 5px;
+}
+.social{
+  margin-top: 5%;
+}
+.fi-social-facebook, .fi-social-twitter, .fi-social-pinterest, .fi-social-tumblr{
+  font-size: 2.5rem;
+  margin-left: 10%;
+}
+.button.hollow.secondary{
+  border: 1.5px solid #000;
+  color: #000;
+  width: 45%;
+  font-size: 12px;
+}
+@media screen and (min-width:758px){
+  .button.hollow.secondary{
+    width: 20%;
+    font-size: 15px;
+  }
+}
