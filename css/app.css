@@ -13,9 +13,6 @@ a{
 a:hover{
   color: #adadad;
 }
-.mt-10{
-  margin-top: 2.5%;
-}
 .top-bar{
   padding: 1rem 0;
 }
@@ -61,7 +58,12 @@ a:hover{
   display: inline-block;
 }
 .shop-now{
-  padding-top: 12%;
+  padding-top: 10%;
+}
+@media (max-width:768px){
+  .shop-now{
+    padding-top: 20%;
+  }
 }
 .shop-big{
   width: 49%;
@@ -79,7 +81,7 @@ a:hover{
 }
 @media (max-width: 600px){
   .shop-small{
-    width: 49.5%;
+    width: 49%;
   }
 }
 @media (max-width: 600px){
@@ -213,7 +215,6 @@ cursor: pointer;
   height: 60px;
   border: 1px solid #f2f2f2;
 }
-
 .checkout-summary-item .item-name,
 .checkout-summary-item .item-price {
   padding: 0 1rem;
@@ -398,9 +399,7 @@ footer:focus{
   width: 90px;
   height: 30px;
 }
-
 @media screen and (min-width:600px){
-
   .off-canvas.is-open {
     width: 373px;
   }
@@ -411,5 +410,4 @@ footer:focus{
   .arrival{
     padding: 0 1rem;
   }
->>>>>>> 8220af105693802147914c953103c99b7e83048e
 }
