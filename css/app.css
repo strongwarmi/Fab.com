@@ -55,6 +55,14 @@ a:hover{
 .display-inline{
   display: inline-block;
 }
+#shop-now div:first-child{
+  padding-top: 100px;
+}
+@media (max-width:600px){
+  #shop-now div:first-child {
+    padding-top: 0;
+  }
+}
 .shop-big{
   width: 49%;
   margin-bottom: 15px;
